@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Введите 1 число"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/result"
+        app:layout_constraintStart_toStartOf="@+id/result"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Результат"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Введите 2 число"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edch1"
+        app:layout_constraintStart_toStartOf="@+id/edch1"
+        app:layout_constraintTop_toBottomOf="@+id/edch1" />
+
+    <Button
+        android:id="@+id/bplus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onButtonPlusClick"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="@+id/edch2"
+        app:layout_constraintStart_toStartOf="@+id/edch2"
+        app:layout_constraintTop_toBottomOf="@+id/edch2" />
+
+    <Button
+        android:id="@+id/bminus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onButtonMinusClick"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="@+id/bplus"
+        app:layout_constraintStart_toStartOf="@+id/bplus"
+        app:layout_constraintTop_toBottomOf="@+id/bplus" />
+
+    <Button
+        android:id="@+id/bmultiply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onButtonMultiplyClick"
+        android:text="*"
+        app:layout_constraintEnd_toEndOf="@+id/bminus"
+        app:layout_constraintStart_toStartOf="@+id/bminus"
+        app:layout_constraintTop_toBottomOf="@+id/bminus" />
+
+    <Button
+        android:id="@+id/bdivide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onButtonDivideClick"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="@+id/bmultiply"
+        app:layout_constraintStart_toStartOf="@+id/bmultiply"
+        app:layout_constraintTop_toBottomOf="@+id/bmultiply" />
+</androidx.constraintlayout.widget.ConstraintLayout>
